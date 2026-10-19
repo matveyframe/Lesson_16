@@ -6,8 +6,8 @@ After=network-online.target
 User=matvey
 Group=matvey
 WorkingDirectory=/home/matvey/home_works/lesson_16/dos-36-js
-ExecStart=/home/matvey/home_works/lesson_16/dos-36-js/venv/bin/python /home/matvey/home_works/lesson_16/dos-36-js/locustfile.py
-Restart=Always
+ExecStart=/usr/bin/node server.js
+Restart=always
 
 [Install]
 WantedBy=multi-user.target
