@@ -1,0 +1,14 @@
+[Unit]
+Description= noteV2_py
+After=network-online.target
+
+[Service]
+User=matvey
+Group=matvey
+WorkingDirectory=/home/matvey/home_works/lesson_16/dos-36-js
+Environment=PORT=3001
+ExecStart=/usr/bin/node server.js
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
